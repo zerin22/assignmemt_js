@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Assignment</title>
+</head>
+<body>
+    <h2>Enter the number : </h2>
+    <input id="num"  type="number" />
+    <button onclick="multiplicationTable()">Get Multiplications Table</button>
+   
+    <script>
+        function multiplicationTable() {
+            var num;
+            num = Number(document.getElementById("num").value);
+            
+                for (let i = 1; i <= 10; i++) {
+                    const product = num * i;
+                    console.log(`${num} x ${i} = ${product}`);
+                }
+        }
+    </script>
+</body>
+</html>
